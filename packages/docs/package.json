@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@ignite-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@storybook/addon-actions": "^6.5.16",
@@ -25,6 +25,10 @@
     "vite": "^4.1.4"
   },
   "dependencies": {
+    "@ignite-ui/docs": "*",
+    "@ignite-ui/tokens": "*",
+    "@ignite-ui/react": "*",
+    "@ignite-ui/eslint-config": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
