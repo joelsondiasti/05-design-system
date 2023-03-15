@@ -8,6 +8,17 @@ export default {
     src: 'https://github.com/joelsondiasti.png',
     alt: 'Joelson Dias',
   },
+  argTypes: {
+    src: {
+      description: 'A URL for avatar image',
+      control: {
+        type: 'text',
+      },
+      table: {
+        defaultValue: { summary: 'Any URL' },
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}

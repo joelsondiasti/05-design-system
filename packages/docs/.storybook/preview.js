@@ -3,6 +3,7 @@ import { themes } from '@storybook/theming'
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
+    expanded: false,
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
@@ -10,5 +11,5 @@ export const parameters = {
   },
   docs: {
     theme: themes.dark,
-  }
+  },
 }
