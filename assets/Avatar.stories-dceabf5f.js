@@ -1,0 +1,2 @@
+import{A as t}from"./index-ca936715.js";import"./index-bdab3ea3.js";import"./iframe-2045e442.js";import"./index-4691d297.js";import"./jsx-runtime-7de84aad.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/joelsondiasti.png",alt:"Joelson Dias"},argTypes:{src:{description:"A URL for avatar image.",control:{type:"text"},table:{defaultValue:{summary:"Any URL"}}}}},l={},m={args:{src:void 0}},p=["Primary","WithFallback"];export{l as Primary,m as WithFallback,p as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories-dceabf5f.js.map
