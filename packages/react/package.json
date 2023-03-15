@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/react",
+  "name": "@diasjoe-ds/react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,9 +14,9 @@
   "author": "Joelson Dias",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@diasjoe-ds/eslint-config": "*",
+    "@diasjoe-ds/tokens": "*",
+    "@diasjoe-ds/ts-config": "*",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",

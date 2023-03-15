@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from '@ignite-ui/react'
+import { Button, ButtonProps } from '@diasjoe-ds/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {

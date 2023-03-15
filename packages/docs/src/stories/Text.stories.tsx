@@ -1,5 +1,5 @@
-import { Text, TextProps } from '@ignite-ui/react'
-import { fontSizes } from '@ignite-ui/tokens'
+import { Text, TextProps } from '@diasjoe-ds/react'
+import { fontSizes } from '@diasjoe-ds/tokens'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
