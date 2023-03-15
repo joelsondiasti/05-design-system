@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - master
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -23,7 +23,7 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
-         
+
       - name: Publish to NPM
         id: changesets
         uses: changesets/action@v1
@@ -35,6 +35,3 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           TURBO_TOKEN: 4h47oFV9nMcHut6GOST2AbnF
           TURBO_TEAM: joelsondiasti
-
-
-    
