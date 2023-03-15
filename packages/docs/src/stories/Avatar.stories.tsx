@@ -10,7 +10,7 @@ export default {
   },
   argTypes: {
     src: {
-      description: 'A URL for avatar image',
+      description: 'A URL for avatar image.',
       control: {
         type: 'text',
       },
