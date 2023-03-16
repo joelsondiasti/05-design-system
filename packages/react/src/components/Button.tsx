@@ -66,6 +66,10 @@ export const Button = styled('button', {
           background: '$gray600',
           borderColor: '$gray200',
         },
+
+        '&:focus': {
+          boxShadow: '0 0 0 2px $colors$gray100',
+        },
       },
     },
 
