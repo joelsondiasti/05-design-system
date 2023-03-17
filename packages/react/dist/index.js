@@ -74,6 +74,7 @@ __export(src_exports, {
   createTheme: () => createTheme,
   css: () => css,
   getCssText: () => getCssText,
+  globalCss: () => globalCss,
   keyframes: () => keyframes,
   styled: () => styled,
   theme: () => theme
@@ -165,6 +166,7 @@ var import_react = require("@stitches/react");
 var {
   styled,
   css,
+  globalCss,
   keyframes,
   getCssText,
   theme,
@@ -761,6 +763,7 @@ function Tooltip2(_a) {
   createTheme,
   css,
   getCssText,
+  globalCss,
   keyframes,
   styled,
   theme

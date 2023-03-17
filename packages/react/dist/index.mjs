@@ -115,6 +115,7 @@ import { createStitches, defaultThemeMap } from "@stitches/react";
 var {
   styled,
   css,
+  globalCss,
   keyframes,
   getCssText,
   theme,
@@ -710,6 +711,7 @@ export {
   createTheme,
   css,
   getCssText,
+  globalCss,
   keyframes,
   styled,
   theme
