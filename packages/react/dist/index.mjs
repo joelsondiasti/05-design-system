@@ -490,7 +490,7 @@ var Input = styled("input", {
     cursor: "not-allowed"
   },
   "&::placeholder": {
-    color: "$gray400"
+    color: "$gray500"
   }
 });
 
@@ -498,8 +498,8 @@ var Input = styled("input", {
 import { jsx as jsx4, jsxs as jsxs3 } from "react/jsx-runtime";
 var TextInput = forwardRef(
   (_a, ref) => {
-    var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
-    return /* @__PURE__ */ jsxs3(TextInputContainer, { children: [
+    var _b = _a, { prefix, size } = _b, props = __objRest(_b, ["prefix", "size"]);
+    return /* @__PURE__ */ jsxs3(TextInputContainer, { size, children: [
       !!prefix && /* @__PURE__ */ jsx4(Prefix, { children: prefix }),
       /* @__PURE__ */ jsx4(Input, __spreadValues({ ref }, props))
     ] });

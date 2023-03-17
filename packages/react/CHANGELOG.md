@@ -1,5 +1,11 @@
 # @diasjoe-ds/react
 
+## 1.0.4
+
+### Patch Changes
+
+- Adjustments due to Ignite Call app
+
 ## 1.0.3
 
 ### Patch Changes

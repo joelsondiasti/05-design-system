@@ -540,7 +540,7 @@ var Input = styled("input", {
     cursor: "not-allowed"
   },
   "&::placeholder": {
-    color: "$gray400"
+    color: "$gray500"
   }
 });
 
@@ -548,8 +548,8 @@ var Input = styled("input", {
 var import_jsx_runtime4 = require("react/jsx-runtime");
 var TextInput = (0, import_react2.forwardRef)(
   (_a, ref) => {
-    var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(TextInputContainer, { children: [
+    var _b = _a, { prefix, size } = _b, props = __objRest(_b, ["prefix", "size"]);
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(TextInputContainer, { size, children: [
       !!prefix && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Prefix, { children: prefix }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Input, __spreadValues({ ref }, props))
     ] });
