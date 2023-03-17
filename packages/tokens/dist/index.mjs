@@ -30,7 +30,8 @@ var fontSizes = {
   "6xl": "3rem",
   "7xl": "4rem",
   "8xl": "4.5rem",
-  "9xl": "6rem"
+  "9xl": "6rem",
+  "10xl": "7rem"
 };
 
 // src/font-weights.ts

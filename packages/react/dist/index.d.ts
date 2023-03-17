@@ -6,6 +6,7 @@ import { ElementType, ComponentProps as ComponentProps$1 } from 'react';
 import * as Avatar$1 from '@radix-ui/react-avatar';
 import * as Checkbox$1 from '@radix-ui/react-checkbox';
 import * as Toast$1 from '@radix-ui/react-toast';
+import * as Tooltip$1 from '@radix-ui/react-tooltip';
 import * as _stitches_react_types_theme from '@stitches/react/types/theme';
 import * as _stitches_react_types_stitches from '@stitches/react/types/stitches';
 import * as _stitches_react_types_util from '@stitches/react/types/util';
@@ -45,6 +46,7 @@ declare const AvatarImage: _stitches_react_types_styled_component.StyledComponen
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -255,6 +257,7 @@ declare const Box: _stitches_react_types_styled_component.StyledComponent<"div",
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -464,6 +467,7 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -670,6 +674,7 @@ declare const CheckboxContainer: _stitches_react_types_styled_component.StyledCo
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -882,6 +887,7 @@ declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -1099,6 +1105,7 @@ declare const Text: _stitches_react_types_styled_component.StyledComponent<"p", 
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -1305,6 +1312,7 @@ declare const TextArea: _stitches_react_types_styled_component.StyledComponent<"
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -1510,6 +1518,7 @@ declare const Input: _stitches_react_types_styled_component.StyledComponent<"inp
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -1899,6 +1908,218 @@ declare namespace Toast {
     var displayName: string;
 }
 
+declare const TooltipContainer: _stitches_react_types_styled_component.StyledComponent<react.FC<Tooltip$1.TooltipProviderProps>, {}, {}, _stitches_react_types_css_util.CSS<{}, {
+    colors: {
+        white: string;
+        black: string;
+        gray100: string;
+        gray200: string;
+        gray400: string;
+        gray500: string;
+        gray600: string;
+        gray700: string;
+        gray800: string;
+        gray900: string;
+        ignite300: string;
+        ignite500: string;
+        ignite700: string;
+        ignite900: string;
+    };
+    fonts: {
+        default: string;
+        code: string;
+    };
+    fontSizes: {
+        xxs: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        '2xl': string;
+        '4xl': string;
+        '5xl': string;
+        '6xl': string;
+        '7xl': string;
+        '8xl': string;
+        '9xl': string;
+        '10xl': string;
+    };
+    fontWeights: {
+        regular: string;
+        medium: string;
+        bold: string;
+    };
+    lineHeights: {
+        shorter: string;
+        short: string;
+        base: string;
+        tall: string;
+    };
+    radii: {
+        px: string;
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        full: string;
+    };
+    space: {
+        1: string;
+        2: string;
+        3: string;
+        4: string;
+        5: string;
+        6: string;
+        7: string;
+        8: string;
+        10: string;
+        12: string;
+        16: string;
+        20: string;
+        40: string;
+        64: string;
+        80: string;
+    };
+}, {
+    height: "space";
+    width: "space";
+    gap: "space";
+    gridGap: "space";
+    columnGap: "space";
+    gridColumnGap: "space";
+    rowGap: "space";
+    gridRowGap: "space";
+    inset: "space";
+    insetBlock: "space";
+    insetBlockEnd: "space";
+    insetBlockStart: "space";
+    insetInline: "space";
+    insetInlineEnd: "space";
+    insetInlineStart: "space";
+    margin: "space";
+    marginTop: "space";
+    marginRight: "space";
+    marginBottom: "space";
+    marginLeft: "space";
+    marginBlock: "space";
+    marginBlockEnd: "space";
+    marginBlockStart: "space";
+    marginInline: "space";
+    marginInlineEnd: "space";
+    marginInlineStart: "space";
+    padding: "space";
+    paddingTop: "space";
+    paddingRight: "space";
+    paddingBottom: "space";
+    paddingLeft: "space";
+    paddingBlock: "space";
+    paddingBlockEnd: "space";
+    paddingBlockStart: "space";
+    paddingInline: "space";
+    paddingInlineEnd: "space";
+    paddingInlineStart: "space";
+    scrollMargin: "space";
+    scrollMarginTop: "space";
+    scrollMarginRight: "space";
+    scrollMarginBottom: "space";
+    scrollMarginLeft: "space";
+    scrollMarginBlock: "space";
+    scrollMarginBlockEnd: "space";
+    scrollMarginBlockStart: "space";
+    scrollMarginInline: "space";
+    scrollMarginInlineEnd: "space";
+    scrollMarginInlineStart: "space";
+    scrollPadding: "space";
+    scrollPaddingTop: "space";
+    scrollPaddingRight: "space";
+    scrollPaddingBottom: "space";
+    scrollPaddingLeft: "space";
+    scrollPaddingBlock: "space";
+    scrollPaddingBlockEnd: "space";
+    scrollPaddingBlockStart: "space";
+    scrollPaddingInline: "space";
+    scrollPaddingInlineEnd: "space";
+    scrollPaddingInlineStart: "space";
+    top: "space";
+    right: "space";
+    bottom: "space";
+    left: "space";
+    fontSize: "fontSizes";
+    background: "colors";
+    backgroundColor: "colors";
+    backgroundImage: "colors";
+    borderImage: "colors";
+    border: "colors";
+    borderBlock: "colors";
+    borderBlockEnd: "colors";
+    borderBlockStart: "colors";
+    borderBottom: "colors";
+    borderBottomColor: "colors";
+    borderColor: "colors";
+    borderInline: "colors";
+    borderInlineEnd: "colors";
+    borderInlineStart: "colors";
+    borderLeft: "colors";
+    borderLeftColor: "colors";
+    borderRight: "colors";
+    borderRightColor: "colors";
+    borderTop: "colors";
+    borderTopColor: "colors";
+    caretColor: "colors";
+    color: "colors";
+    columnRuleColor: "colors";
+    outline: "colors";
+    outlineColor: "colors";
+    fill: "colors";
+    stroke: "colors";
+    textDecorationColor: "colors";
+    fontFamily: "fonts";
+    fontWeight: "fontWeights";
+    lineHeight: "lineHeights";
+    letterSpacing: "letterSpacings";
+    blockSize: "sizes";
+    minBlockSize: "sizes";
+    maxBlockSize: "sizes";
+    inlineSize: "sizes";
+    minInlineSize: "sizes";
+    maxInlineSize: "sizes";
+    minWidth: "sizes";
+    maxWidth: "sizes";
+    minHeight: "sizes";
+    maxHeight: "sizes";
+    flexBasis: "sizes";
+    gridTemplateColumns: "sizes";
+    gridTemplateRows: "sizes";
+    borderWidth: "borderWidths";
+    borderTopWidth: "borderWidths";
+    borderLeftWidth: "borderWidths";
+    borderRightWidth: "borderWidths";
+    borderBottomWidth: "borderWidths";
+    borderStyle: "borderStyles";
+    borderTopStyle: "borderStyles";
+    borderLeftStyle: "borderStyles";
+    borderRightStyle: "borderStyles";
+    borderBottomStyle: "borderStyles";
+    borderRadius: "radii";
+    borderTopLeftRadius: "radii";
+    borderTopRightRadius: "radii";
+    borderBottomRightRadius: "radii";
+    borderBottomLeftRadius: "radii";
+    boxShadow: "shadows";
+    textShadow: "shadows";
+    transition: "transitions";
+    zIndex: "zIndices";
+}, {}>>;
+
+interface TooltipProps extends ComponentProps$1<typeof TooltipContainer> {
+    content: string;
+    sideOffset?: number;
+    triggerAsChild?: boolean;
+    dataSide?: 'left' | 'right' | 'bottom' | 'top';
+}
+declare function Tooltip({ content, triggerAsChild, sideOffset, dataSide, ...props }: TooltipProps): JSX.Element;
+
 declare const styled: <Type extends _stitches_react_types_util.Function | react.ComponentType<any> | keyof JSX.IntrinsicElements, Composers extends (string | _stitches_react_types_util.Function | react.ComponentType<any> | {
     [name: string]: unknown;
 })[], CSS = _stitches_react_types_css_util.CSS<{}, {
@@ -1936,6 +2157,7 @@ declare const styled: <Type extends _stitches_react_types_util.Function | react.
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -2148,6 +2370,7 @@ declare const styled: <Type extends _stitches_react_types_util.Function | react.
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -2352,6 +2575,7 @@ declare const css: <Composers extends (string | _stitches_react_types_util.Funct
         '7xl': string;
         '8xl': string;
         '9xl': string;
+        '10xl': string;
     };
     fontWeights: {
         regular: string;
@@ -2566,6 +2790,7 @@ declare const keyframes: (style: {
             '7xl': string;
             '8xl': string;
             '9xl': string;
+            '10xl': string;
         };
         fontWeights: {
             regular: string;
@@ -2776,6 +3001,7 @@ declare const theme: string & {
         '7xl': _stitches_react_types_theme.Token<"7xl", string, "fontSizes", "">;
         '8xl': _stitches_react_types_theme.Token<"8xl", string, "fontSizes", "">;
         '9xl': _stitches_react_types_theme.Token<"9xl", string, "fontSizes", "">;
+        '10xl': _stitches_react_types_theme.Token<"10xl", string, "fontSizes", "">;
     };
     fontWeights: {
         regular: _stitches_react_types_theme.Token<"regular", string, "fontWeights", "">;
@@ -2849,6 +3075,7 @@ declare const createTheme: <Argument0 extends string | ({
         '7xl'?: string | number | boolean | undefined;
         '8xl'?: string | number | boolean | undefined;
         '9xl'?: string | number | boolean | undefined;
+        '10xl'?: string | number | boolean | undefined;
     } | undefined;
     fontWeights?: {
         regular?: string | number | boolean | undefined;
@@ -2926,6 +3153,7 @@ declare const createTheme: <Argument0 extends string | ({
         '7xl'?: string | number | boolean | undefined;
         '8xl'?: string | number | boolean | undefined;
         '9xl'?: string | number | boolean | undefined;
+        '10xl'?: string | number | boolean | undefined;
     } | undefined;
     fontWeights?: {
         regular?: string | number | boolean | undefined;
@@ -3010,6 +3238,7 @@ declare const config: {
             '7xl': string;
             '8xl': string;
             '9xl': string;
+            '10xl': string;
         };
         fontWeights: {
             regular: string;
@@ -3181,4 +3410,4 @@ declare const config: {
     utils: {};
 };
 
-export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Checkbox, CheckboxProps, Heading, HeadingProps, MultiStep, MultiStepProps, Text, TextArea, TextAreaProps, TextInput, TextInputProps, TextProps, Toast, ToastProps, config, createTheme, css, getCssText, keyframes, styled, theme };
+export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Checkbox, CheckboxProps, Heading, HeadingProps, MultiStep, MultiStepProps, Text, TextArea, TextAreaProps, TextInput, TextInputProps, TextProps, Toast, ToastProps, Tooltip, TooltipProps, config, createTheme, css, getCssText, keyframes, styled, theme };

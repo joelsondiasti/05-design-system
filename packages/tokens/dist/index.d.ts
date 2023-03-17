@@ -29,6 +29,7 @@ declare const fontSizes: {
     '7xl': string;
     '8xl': string;
     '9xl': string;
+    '10xl': string;
 };
 
 declare const fontWeights: {

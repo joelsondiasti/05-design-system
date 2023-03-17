@@ -1,5 +1,11 @@
 # @diasjoe-ds/react
 
+## 1.0.3
+
+### Patch Changes
+
+- Added Tooltip and Toast Components
+
 ## 1.0.2
 
 ### Patch Changes

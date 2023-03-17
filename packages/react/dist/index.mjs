@@ -615,6 +615,85 @@ function Toast2({
   ] });
 }
 Toast2.displayName = "Toast";
+
+// src/components/Tooltip/styles.ts
+import * as Tooltip from "@radix-ui/react-tooltip";
+var slideUpAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateY(2px)" },
+  "100%": { opacity: 1, transform: "translateY(0)" }
+});
+var slideRightAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateX(-2px)" },
+  "100%": { opacity: 1, transform: "translateX(0)" }
+});
+var slideDownAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateY(-2px)" },
+  "100%": { opacity: 1, transform: "translateY(0)" }
+});
+var slideLeftAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateX(2px)" },
+  "100%": { opacity: 1, transform: "translateX(0)" }
+});
+var TooltipContainer = styled(Tooltip.Provider, {});
+var TooltipRoot = styled(Tooltip.Root, {});
+var TooltipTrigger = styled(Tooltip.Trigger, {
+  all: "unset"
+});
+var TooltipPortal = styled(Tooltip.Portal, {});
+var TooltipContent = styled(Tooltip.Content, {
+  borderRadius: "$xs",
+  padding: "$3 $4",
+  fontSize: "$sm",
+  fontFamily: "$default",
+  lineHeight: "$base",
+  color: "$white",
+  backgroundColor: "$gray900",
+  filter: "drop-shadow(4px 16px 24px rgba(0, 0, 0, 0.25))",
+  userSelect: "none",
+  animationDuration: "400ms",
+  animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+  willChange: "transform, opacity",
+  '&[data-state="delayed-open"]': {
+    '&[data-side="top"]': { animationName: slideDownAndFade },
+    '&[data-side="right"]': { animationName: slideLeftAndFade },
+    '&[data-side="bottom"]': { animationName: slideUpAndFade },
+    '&[data-side="left"]': { animationName: slideRightAndFade }
+  }
+});
+var TooltipArrow = styled(Tooltip.Arrow, {
+  fill: "$gray900"
+});
+
+// src/components/Tooltip/index.tsx
+import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
+function Tooltip2(_a) {
+  var _b = _a, {
+    content,
+    triggerAsChild = false,
+    sideOffset = 3,
+    dataSide = "top"
+  } = _b, props = __objRest(_b, [
+    "content",
+    "triggerAsChild",
+    "sideOffset",
+    "dataSide"
+  ]);
+  return /* @__PURE__ */ jsx6(TooltipContainer, { children: /* @__PURE__ */ jsxs5(TooltipRoot, { children: [
+    /* @__PURE__ */ jsx6(TooltipTrigger, { asChild: triggerAsChild, children: props.children }),
+    /* @__PURE__ */ jsx6(TooltipPortal, { children: /* @__PURE__ */ jsxs5(
+      TooltipContent,
+      __spreadProps(__spreadValues({
+        sideOffset,
+        "data-side": dataSide
+      }, props), {
+        children: [
+          content,
+          /* @__PURE__ */ jsx6(TooltipArrow, {})
+        ]
+      })
+    ) })
+  ] }) });
+}
 export {
   Avatar2 as Avatar,
   Box,
@@ -626,6 +705,7 @@ export {
   TextArea,
   TextInput,
   Toast2 as Toast,
+  Tooltip2 as Tooltip,
   config,
   createTheme,
   css,

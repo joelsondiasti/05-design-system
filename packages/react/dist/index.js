@@ -69,6 +69,7 @@ __export(src_exports, {
   TextArea: () => TextArea,
   TextInput: () => TextInput,
   Toast: () => Toast2,
+  Tooltip: () => Tooltip2,
   config: () => config,
   createTheme: () => createTheme,
   css: () => css,
@@ -664,6 +665,85 @@ function Toast2({
   ] });
 }
 Toast2.displayName = "Toast";
+
+// src/components/Tooltip/styles.ts
+var Tooltip = __toESM(require("@radix-ui/react-tooltip"));
+var slideUpAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateY(2px)" },
+  "100%": { opacity: 1, transform: "translateY(0)" }
+});
+var slideRightAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateX(-2px)" },
+  "100%": { opacity: 1, transform: "translateX(0)" }
+});
+var slideDownAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateY(-2px)" },
+  "100%": { opacity: 1, transform: "translateY(0)" }
+});
+var slideLeftAndFade = keyframes({
+  "0%": { opacity: 0, transform: "translateX(2px)" },
+  "100%": { opacity: 1, transform: "translateX(0)" }
+});
+var TooltipContainer = styled(Tooltip.Provider, {});
+var TooltipRoot = styled(Tooltip.Root, {});
+var TooltipTrigger = styled(Tooltip.Trigger, {
+  all: "unset"
+});
+var TooltipPortal = styled(Tooltip.Portal, {});
+var TooltipContent = styled(Tooltip.Content, {
+  borderRadius: "$xs",
+  padding: "$3 $4",
+  fontSize: "$sm",
+  fontFamily: "$default",
+  lineHeight: "$base",
+  color: "$white",
+  backgroundColor: "$gray900",
+  filter: "drop-shadow(4px 16px 24px rgba(0, 0, 0, 0.25))",
+  userSelect: "none",
+  animationDuration: "400ms",
+  animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+  willChange: "transform, opacity",
+  '&[data-state="delayed-open"]': {
+    '&[data-side="top"]': { animationName: slideDownAndFade },
+    '&[data-side="right"]': { animationName: slideLeftAndFade },
+    '&[data-side="bottom"]': { animationName: slideUpAndFade },
+    '&[data-side="left"]': { animationName: slideRightAndFade }
+  }
+});
+var TooltipArrow = styled(Tooltip.Arrow, {
+  fill: "$gray900"
+});
+
+// src/components/Tooltip/index.tsx
+var import_jsx_runtime6 = require("react/jsx-runtime");
+function Tooltip2(_a) {
+  var _b = _a, {
+    content,
+    triggerAsChild = false,
+    sideOffset = 3,
+    dataSide = "top"
+  } = _b, props = __objRest(_b, [
+    "content",
+    "triggerAsChild",
+    "sideOffset",
+    "dataSide"
+  ]);
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(TooltipContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(TooltipRoot, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(TooltipTrigger, { asChild: triggerAsChild, children: props.children }),
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(TooltipPortal, { children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
+      TooltipContent,
+      __spreadProps(__spreadValues({
+        sideOffset,
+        "data-side": dataSide
+      }, props), {
+        children: [
+          content,
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(TooltipArrow, {})
+        ]
+      })
+    ) })
+  ] }) });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
@@ -676,6 +756,7 @@ Toast2.displayName = "Toast";
   TextArea,
   TextInput,
   Toast,
+  Tooltip,
   config,
   createTheme,
   css,
