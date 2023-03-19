@@ -13,7 +13,7 @@ export interface ToastProps extends ComponentProps<typeof ToastContainer> {
   title: string
   description: string
   duration?: number
-  open: boolean
+  open?: boolean
   onOpenChange?(open: boolean): void
 }
 

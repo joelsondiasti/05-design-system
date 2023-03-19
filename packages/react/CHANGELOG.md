@@ -1,5 +1,11 @@
 # @diasjoe-ds/react
 
+## 1.0.6
+
+### Patch Changes
+
+- Fix: interface of Toast Component
+
 ## 1.0.5
 
 ### Patch Changes

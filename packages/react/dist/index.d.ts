@@ -2107,7 +2107,7 @@ interface ToastProps extends ComponentProps$1<typeof ToastContainer> {
     title: string;
     description: string;
     duration?: number;
-    open: boolean;
+    open?: boolean;
     onOpenChange?(open: boolean): void;
 }
 declare function Toast({ title, description, duration, onOpenChange, open, }: ToastProps): JSX.Element;
